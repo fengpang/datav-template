@@ -1,26 +1,21 @@
-# charts
+# charts  --数据可视化基础模板
 
-## Project setup
+## 安装依赖
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 开发环境运行
 ```
 yarn run serve
 ```
 
-### Compiles and minifies for production
+### 打包
 ```
 yarn run build
 ```
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
+### 代码格式化
 ```
 yarn run lint
 ```
