@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import store from './store'
 
 Vue.use(Router)
-
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -20,3 +20,16 @@ export default new Router({
     }
   ]
 })
+
+// 入场进场动画切换
+router.beforeEach((to, from, next) => {
+  store.commit('CHANGE_ANIMATES', 'leave')
+  setTimeout(() => {
+    next()
+  }, 500)
+})
+router.afterEach(() => {
+  store.commit('CHANGE_ANIMATES', 'enter')
+})
+
+export default router

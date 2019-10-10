@@ -1,5 +1,5 @@
 <template>
-  <div class="panel">
+  <div class="panel animated" :class="$store.state.animates[animateIndex]">
     <slot name="title">
       <div class="title">{{text}}</div>
     </slot>
@@ -8,11 +8,16 @@
 </template>
 
 <script>
+import 'animate.css'
 export default {
   props: {
     text: {
       type: String,
       default: () => '标题'
+    },
+    animateIndex: {
+      type: [String, Number],
+      default: () => 0
     }
   }
 }
