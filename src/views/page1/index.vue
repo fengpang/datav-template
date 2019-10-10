@@ -1,26 +1,26 @@
 <template>
   <div class="home">
     <div class="row">
-      <div class="item">
+      <DPanel class="item" text="折线图">
         <ve-line :theme="$store.state.echartsTheme" :data="chartData"></ve-line>
-      </div>
-      <div class="item">
-        <ve-histogram :data="chartData"></ve-histogram>
-      </div>    
-      <div class="item">
-        <ve-ring :data="chartData"></ve-ring>
-      </div>    
+      </DPanel>
+      <DPanel class="item" text="柱状图">
+        <ve-histogram :theme="$store.state.echartsTheme" :data="chartData"></ve-histogram>
+      </DPanel>    
+      <DPanel class="item" text="环图">
+        <ve-ring :theme="$store.state.echartsTheme" :data="chartData"></ve-ring>
+      </DPanel>    
     </div>
     <div class="row">
-      <div class="item">
-        <ve-bar :data="chartData"></ve-bar>
-      </div>
-      <div class="item">
-        <ve-pie :data="chartData"></ve-pie>
-      </div>    
-      <div class="item">
-        <ve-radar :data="chartData"></ve-radar>
-      </div>    
+      <DPanel class="item" text="条形图">
+        <ve-bar :theme="$store.state.echartsTheme" :data="chartData"></ve-bar>
+      </DPanel>
+      <DPanel class="item" text="饼图">
+        <ve-pie :theme="$store.state.echartsTheme" :data="chartData"></ve-pie>
+      </DPanel>    
+      <DPanel class="item" text="雷达图">
+        <ve-radar :theme="$store.state.echartsTheme" :data="chartData"></ve-radar>
+      </DPanel>    
     </div>
   </div>
 </template>

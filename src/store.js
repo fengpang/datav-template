@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import echartTheme from './assets/echartTheme'
+import echartTheme from './theme/echartTheme'
 
 Vue.use(Vuex)
 
