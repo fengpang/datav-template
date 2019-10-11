@@ -2,9 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-// import VCharts from 'v-charts'
 import { Panle } from './components'
-import chartWraper from './plugins/chartWraper'
+import chartWraper from './plugins/chartWraper' // 包装v-charts处理一些公共逻辑
 
 Vue.use(chartWraper)
 
