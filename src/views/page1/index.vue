@@ -2,35 +2,35 @@
   <div class="home">
     <div class="row">
       <DPanel class="item" text="折线图">
-        <ve-line :theme="$store.state.echartsTheme" :data="chartData"></ve-line>
+        <ve-line :data="chartData"></ve-line>
       </DPanel>
       <DPanel class="item" text="柱状图">
-        <ve-histogram :theme="$store.state.echartsTheme" :data="chartData"></ve-histogram>
+        <ve-histogram :data="chartData"></ve-histogram>
       </DPanel>    
       <DPanel class="item" text="环图">
-        <ve-ring :theme="$store.state.echartsTheme" :data="chartData"></ve-ring>
+        <ve-ring :data="chartData"></ve-ring>
       </DPanel>    
     </div>
     <div class="row">
       <DPanel class="item" text="条形图">
-        <ve-bar :theme="$store.state.echartsTheme" :data="chartData"></ve-bar>
+        <ve-bar :data="chartData"></ve-bar>
       </DPanel>
       <DPanel class="item" text="饼图">
-        <ve-pie :theme="$store.state.echartsTheme" :data="chartData"></ve-pie>
+        <ve-pie :data="chartData"></ve-pie>
       </DPanel>    
       <DPanel class="item" text="雷达图">
-        <ve-radar :theme="$store.state.echartsTheme" :data="chartData"></ve-radar>
-      </DPanel>    
+        <ve-radar :data="chartData"></ve-radar>
+      </DPanel>
     </div>
     <div class="row">
       <DPanel class="item" text="热力图">
-        <ve-scatter :theme="$store.state.echartsTheme" :data="chartData"></ve-scatter>
+        <ve-scatter :data="chartData"></ve-scatter>
       </DPanel>
       <DPanel class="item" text="地图">
-        <ve-map :theme="$store.state.echartsTheme" :data="mapData"></ve-map>
+        <ve-map :data="mapData"></ve-map>
       </DPanel>
       <DPanel class="item" text="热力地图">
-        <ve-heatmap :theme="$store.state.echartsTheme" :settings="chartSettings" :data="hotMapData"></ve-heatmap>
+        <ve-heatmap :settings="chartSettings" :data="hotMapData"></ve-heatmap>
       </DPanel>    
     </div>
   </div>

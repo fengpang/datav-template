@@ -2,10 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import VCharts from 'v-charts'
+// import VCharts from 'v-charts'
 import { Panle } from './components'
+import chartWraper from './plugins/chartWraper'
 
-Vue.use(VCharts)
+Vue.use(chartWraper)
 
 /* 注册大量使用公共组件 */
 Vue.component('DPanel', Panle)
