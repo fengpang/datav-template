@@ -17,7 +17,7 @@ export default {
     },
     animateIndex: {
       type: [String, Number],
-      default: () => 0
+      default: () => Math.round(Math.random()*7)
     }
   }
 }
@@ -25,6 +25,7 @@ export default {
 
 <style lang="less">
   .panel {
+    transform: translate3d(0, 0, 0);
     .title {
       color: rgb(239, 165, 77);
     }

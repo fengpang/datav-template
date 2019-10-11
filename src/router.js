@@ -26,7 +26,7 @@ router.beforeEach((to, from, next) => {
   store.commit('CHANGE_ANIMATES', 'leave')
   setTimeout(() => {
     next()
-  }, 500)
+  }, 1100)
 })
 router.afterEach(() => {
   store.commit('CHANGE_ANIMATES', 'enter')
